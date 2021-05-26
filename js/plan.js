@@ -34,7 +34,7 @@ function scrollFn () {
             $aboutContent[i].animate({ opacity: 1, left: 0 }, 500);
         }
     
-        if( $windowT + $windowH > $aboutTop[i] + 350){
+        if( $windowT + $windowH > $aboutTop[i] + 400){
             $aboutImg[i].animate({ opacity: 1,  left: 0 }, 800);
         }
 
