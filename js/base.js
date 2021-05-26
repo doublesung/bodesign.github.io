@@ -37,7 +37,6 @@ $(document).ready(function () {
             exist = false;
         }
 
-        console.log( $windowT + $windowH, $footerTop)
         // animation
         if( $windowT + $windowH > $footerTop + 100 ){
             $footer.animate({ opacity: 1}, 600);
