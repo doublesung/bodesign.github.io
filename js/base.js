@@ -36,15 +36,13 @@ $(document).ready(function () {
             exist = false;
         }
 
-        console.log($windowT + $windowH ,$footerTop )
+        
         // animation
-        if( $windowT + $windowH > $footerTop + 150 ){
+        if( $windowT + $windowH > $footerTop + 100 ){
             $footer.animate({ opacity: 1}, 500);
-        }
-
-        if( $windowT + $windowH > $footerTop + 200 ){
             $footerBody.animate({ top: 0 }, 500);
         }
+
     }
 
     $menuBtn.click(function(){
