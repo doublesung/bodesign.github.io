@@ -33,7 +33,7 @@ $(window).scroll(function(){
 function scrollFn () {
     let $windowT = $(window).scrollTop();
     let $windowH = $(window).height();
-
+    
     // animation
     if( $windowT + $windowH > $aboutTop + 250){
         $aboutContent.animate({ opacity: 1, left: 0 }, 500);
@@ -43,15 +43,15 @@ function scrollFn () {
         $aboutImg.animate({ opacity: 1,  left: 0 }, 800);
     }
     
-    if( $windowT + $windowH > $recommendTop + 250){
+    if( $windowT + $windowH > $recommendTop + 100){
         $recommendTitle.animate({ opacity: 1, left: 0 }, 500); 
     }
 
-    if( $windowT + $windowH > $recommendTop + 450){
+    if( $windowT + $windowH > $recommendTop + 250){
         $recommendBox.animate({ opacity: 1, top: 0}, 500); 
     }
 
-    if( $windowT + $windowH > $memberTop + 250 ){
+    if( $windowT + $windowH > $memberTop + 150 ){
         $memberContent.animate({ opacity: 1, left: 0}, 500);
     }
 
@@ -59,8 +59,9 @@ function scrollFn () {
         $memberImg.animate({ opacity: 1}, 500); 
     }
 
-    if( $windowT + $windowH > $planTop + 350 ){
+    if( $windowT + $windowH > $planTop + 150 ){
         $planBox.animate({ opacity: 1, top: 0}, 800);
     }
+    
 }
 
